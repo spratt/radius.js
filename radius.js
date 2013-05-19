@@ -105,6 +105,8 @@ var radius = (function(radius, undefined) {
 		
 		// style the border
 		polygonPlacemark.setStyleSelector(ge.createStyle(''));
+		var polyStyle = polygonPlacemark.getStyleSelector().getPolyStyle();
+		polyStyle.getColor().set(fill);
 		var lineStyle = polygonPlacemark.getStyleSelector().getLineStyle();
 		lineStyle.setWidth(2);
 		lineStyle.getColor().set(border);

@@ -11,12 +11,12 @@
 												cold_lake,
 												range_of_a_cf18 / 2,
 												'99ff0000',
-												'99ff0000');
+												'50ff0000');
 		var bagotville_range = radius.drawCircle('CFB Bagotville',
 												 bagotville,
 												 range_of_a_cf18 / 2,
 												 '990000ff',
-												 '990000ff');
+												 '500000ff');
 	}
 
 	radius.init('map3d',ottawa,drawRanges,noop);
