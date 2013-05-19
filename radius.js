@@ -17,7 +17,7 @@ var radius = (function(radius, undefined) {
 			strokeOpacity: 0.8,
 			strokeWeight: 2,
 			fillColor: fill,
-			fillOpacity: 0.35,
+			fillOpacity: 0.15,
 			map: map,
 			center: centre,
 			radius: rad
