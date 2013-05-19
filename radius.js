@@ -1,13 +1,13 @@
 var radius = (function(radius, undefined) {
 	var map;
 
-	radius.init = function radius_init(centre) {
+	radius.init = function radius_init(id,centre) {
 		var mapOptions = {
 			center: centre,
 			zoom: 3,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
-		map = new google.maps.Map(document.getElementById("map-canvas"),
+		map = new google.maps.Map(document.getElementById(id),
 								  mapOptions);
 	}
 
