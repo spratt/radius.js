@@ -26,6 +26,9 @@ var radius = (function(radius, undefined) {
 		return angle * 180 / pi;
 	}
 
+	
+	// this code taken from
+	// http://stackoverflow.com/questions/877524/calculating-coordinates-given-a-bearing-and-a-distance
 	function getRadialDistance(coord, bearing, distance) {
 		/*
 		  Return final coordinates (lat2,lon2) [in degrees] given initial
