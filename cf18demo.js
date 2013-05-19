@@ -10,13 +10,13 @@
 		var cold_lake_range = radius.drawCircle('CFB Cold Lake',
 												cold_lake,
 												range_of_a_cf18 / 2,
-												'99ffaa00',
-												'60ffaa00');
+												'99ffff00',
+												'60ffff00');
 		var bagotville_range = radius.drawCircle('CFB Bagotville',
 												 bagotville,
 												 range_of_a_cf18 / 2,
-												 '9900ffaa',
-												 '6000ffaa');
+												 '9900ffff',
+												 '6000ffff');
 	}
 
 	radius.init('map3d',ottawa,drawRanges,noop);
