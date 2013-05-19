@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>radius.js demo</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
       html { height: 100% }
@@ -11,6 +12,33 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKQi8NjybfX5ShP8SumCjwjIh1cEAyd_w&sensor=false">
     </script>
     <script type="text/javascript" src="radius.js"></script>
+    <script type="text/javascript">
+google.maps.event.addDomListener(window, 'load', function() {
+	var ottawa = new google.maps.LatLng(45.417,-75.683);
+	radius.init(ottawa);
+});
+google.maps.event.addDomListener(window, 'load', function() {
+	var range_of_a_cf18 = 3330000;
+	var cold_lake = new google.maps.LatLng(54.45,-110.167);
+	var bagotville = new google.maps.LatLng(48.317,-79.983);
+	var cold_lake_range = radius.drawCircle(cold_lake,
+											range_of_a_cf18,
+											'#ff0000',
+											'#ff0000');
+	var cold_lake_range = radius.drawCircle(cold_lake,
+											range_of_a_cf18/2,
+											'#ff0000',
+											'#ff0000');
+	var bagotville_range = radius.drawCircle(bagotville,
+											 range_of_a_cf18,
+											 '#0000ff',
+											 '#0000ff');
+	var bagotville_range = radius.drawCircle(bagotville,
+											 range_of_a_cf18/2,
+											 '#0000ff',
+											 '#0000ff');
+});
+    </script>
   </head>
   <body>
     <div id="map-canvas"/>
