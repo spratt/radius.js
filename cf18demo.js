@@ -2,8 +2,8 @@
 	var mapID = 'map3d';
 	var ottawa = new radius.Coord(45.417,-75.683);
 	var range_of_a_cf18 = 3330;
-	var cold_lake = new radius.Coord(54.40,-110.267);
-	var bagotville = new radius.Coord(48.317,-79.983);
+	var cold_lake = new radius.Coord(54.405,-110.279444);
+	var bagotville = new radius.Coord(48.330556,-70.996944);
 	
 	function noop() {}
 	function drawRanges() {
